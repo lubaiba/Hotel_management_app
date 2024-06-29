@@ -5,8 +5,10 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import { useTheme } from '@mui/material';
 
 export default function MediaCard({room}:any) {
+  const theme=useTheme();
   return (
     <div >
     <Card sx={{ minWidth: 300 }}>
@@ -21,7 +23,7 @@ export default function MediaCard({room}:any) {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Book Now</Button>
+        <Button size="small" style={{backgroundColor:theme.palette.secondary.main}}>Book Now</Button>
       </CardActions>
     </Card>
     </div>
