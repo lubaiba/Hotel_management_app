@@ -1,10 +1,10 @@
 "use client";
-import { Typography } from "@mui/material";
 import React from "react";
+import { Typography,useTheme } from "@mui/material";
 import Button from "@mui/material/Button";
-import { useTheme } from "@mui/material";
-import styles from "../../page.module.css";
 import Image from "next/image";
+import styles from "../../page.module.css";
+
 export default function Content() {
   const theme = useTheme();
   return (

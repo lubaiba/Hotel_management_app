@@ -5,32 +5,28 @@ import { Typography, useTheme } from '@mui/material';
 import Image from 'next/image';
 import styles from "../../page.module.css";
 
+const facilities = [
+  { src: "/images/kitchen.png", name: "Kitchen" },
+  { src: "/images/pool.png", name: "Pool" },
+  { src: "/images/wifi.png", name: "Wifi" },
+  { src: "/images/gym.png", name: "Gym" },
+  { src: "/images/taxi.png", name: "Taxi" },
+];
+
 export default function Facilities() {
-    const theme=useTheme();
+  const theme=useTheme();
   return (
     <Box className={styles.facilities} id="facilities">
       <Typography variant='h4' style={{color:theme.palette.secondary.dark}}>Facilities</Typography>
       <Box className={styles.facilitiescontent}>
-      <Box sx={{ flexGrow: 1 }}>
-        <Image src="/icons/dashicons_editor-kitchensink.png" width={60} height={60} alt="kitchen" />
-        <Typography variant='subtitle1'>Kitchen</Typography>
-      </Box>
-      <Box>
-        <Image src="/icons/ic_twotone-pool.png" width={60} height={60} alt="kitchen" />
-        <Typography variant='subtitle1'>Pool</Typography>
-      </Box>
-      <Box>
-        <Image src="/icons/clarity_wifi-solid.png" width={60} height={60} alt="kitchen" />
-        <Typography variant='subtitle1'>Wifi</Typography>
-      </Box>
-      <Box>
-        <Image src="/icons/maki_fitness-centre-11.png" width={60} height={60} alt="kitchen" />
-        <Typography variant='subtitle1'>Gym</Typography>
-      </Box>
-      <Box>
-        <Image src="/icons/bx_bx-taxi.png" width={60} height={60} alt="kitchen" />
-        <Typography variant='subtitle1'>Taxi</Typography>
-      </Box>
+      {
+        facilities.map((facility,index)=>(
+          <Box sx={{flexGrow:1}} key={index}>
+          <Image src={facility.src} width={60} height={60} alt={facility.name}/>
+          <Typography variant='subtitle1'>{facility.name}</Typography>
+        </Box>
+        ))
+      }
     </Box>
     </Box>
   );

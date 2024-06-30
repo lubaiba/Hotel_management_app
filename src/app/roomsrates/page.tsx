@@ -1,10 +1,10 @@
 "use client";
 import React, { useEffect } from "react";
-import MediaCard from "../components/Card";
-import styles from "../page.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchRooms } from "./roomSlice";
 import { AppDispatch,RootState } from "../store/store";
+import MediaCard from "../components/Card";
+import styles from "../page.module.css";
 
 export default function page() {
   const dispatch=useDispatch<AppDispatch>();

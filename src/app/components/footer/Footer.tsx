@@ -1,14 +1,14 @@
 "use client";
 import * as React from "react";
-import { styled, useTheme } from "@mui/material";
+import { styled, useTheme ,Typography} from "@mui/material";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import styles from "../../page.module.css";
-import { Typography } from "@mui/material";
-import Image from "next/image";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import Image from "next/image";
+import styles from "../../page.module.css";
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
@@ -25,10 +25,10 @@ export default function Footer() {
         <Grid item xs={4}>
           <Item className={styles.footercontent}>
             <Image
-              src="/images/image 1.png"
+              src="/images/logobon.png"
               width={60}
               height={60}
-              alt="kitchen"
+              alt="logo"
             />
             <Typography variant="subtitle1">
               Bon Hotels Head Office

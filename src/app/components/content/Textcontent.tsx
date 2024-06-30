@@ -1,11 +1,11 @@
 'use client';
 import React from 'react'
 import Box from '@mui/material/Box';
-import { Typography } from '@mui/material';
-import styles from "../../page.module.css";
-import { useTheme } from '@mui/material';
+import { Typography ,useTheme} from '@mui/material';
 import Button from '@mui/material/Button';
+import styles from "../../page.module.css";
 import Rooms from './Rooms';
+
 export default function Textcontent() {
     const theme=useTheme();
   return (
