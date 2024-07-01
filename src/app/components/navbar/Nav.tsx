@@ -22,7 +22,7 @@ export default function Nav() {
         <Link href="/" className={styles.navlink}>
           <Typography variant="h6">Our Hotel</Typography>
         </Link>
-        <Link href="/roomsrates" className={styles.navlink}>
+        <Link href="/roomsRates" className={styles.navlink}>
           <Typography variant="h6">Rooms & Rates</Typography>
         </Link>
         <Link href="#facilities" className={styles.navlink}>

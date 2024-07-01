@@ -1,7 +1,7 @@
 import Subnav from "./components/navbar/Subnav";
 import Content from "./components/content/Content";
 import Facilities from "./components/content/Facilities";
-import Textcontent from "./components/content/Textcontent";
+import Rooms from "./components/content/Rooms";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
     <Subnav/>
     <Content/>
     <Facilities/>
-    <Textcontent/>
+    <Rooms/>
     </>
   );
 }

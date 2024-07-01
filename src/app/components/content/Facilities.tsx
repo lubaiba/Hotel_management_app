@@ -17,10 +17,10 @@ export default function Facilities() {
   const theme=useTheme();
   return (
     <Box className={styles.facilities} id="facilities">
-      <Typography variant='h4' style={{color:theme.palette.secondary.dark}}>Facilities</Typography>
+      <Typography variant='h3' style={{color:theme.palette.secondary.dark}}>Facilities</Typography>
       <Box className={styles.facilitiescontent}>
       {
-        facilities.map((facility,index)=>(
+        facilities?.map((facility,index)=>(
           <Box sx={{flexGrow:1}} key={index}>
           <Image src={facility.src} width={60} height={60} alt={facility.name}/>
           <Typography variant='subtitle1'>{facility.name}</Typography>

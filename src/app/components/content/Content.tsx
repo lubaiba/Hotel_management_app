@@ -12,7 +12,7 @@ export default function Content() {
       <Image
         src="/images/background.jpg"
         height={600}
-        width={800}
+        width={600}
         alt="bg image"
         className={styles.background}
       />
